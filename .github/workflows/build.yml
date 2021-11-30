@@ -62,3 +62,7 @@ jobs:
         shell: cmd
         if: |
           startsWith(matrix.os, 'windows')
+      - uses: actions/upload-artifact@v1
+        with:
+          name: artifact
+          path: .
