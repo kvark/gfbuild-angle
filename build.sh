@@ -350,6 +350,7 @@ DESCRIPTION="$(echo -e "Automated build for ${TARGET_REPO_NAME} version ${COMMIT
 
 # Only release from master branch commits.
 # shellcheck disable=SC2153
+exit 0
 if test "${GITHUB_REF}" != "refs/heads/master"; then
   exit 0
 fi
